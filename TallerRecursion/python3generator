@@ -1,0 +1,16 @@
+from random 
+import sys
+
+# main
+param_1= sys.argv[1] 
+param_2= sys.argv[2] 
+param_3= sys.argv[3]  
+
+random_numbers=random.sample(range(1, param_1), param_1)
+
+file = open(param_1+"numbers.txt", "w+")
+for number in random_numbers:
+    f=open(param_1+"numbers.txt", "a")
+    f.write(number +'\n')
+
+f.close()
